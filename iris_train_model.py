@@ -12,7 +12,7 @@ sns.set(style='white')
 
 
 # Load Data
-dataset = pd.read_csv(r'C:\Users\user\FSDS_Adv_Gene_AI_&Agentic_AI\CI_CD_Pipeline\iris.csv')
+dataset = pd.read_csv('iris.csv')
 
 # Feature names (Ensure no extra spaces or parentheses)
 dataset.columns = [colname.strip(' (cm)').replace(" ", "_") for colname in dataset.columns.tolist()]
