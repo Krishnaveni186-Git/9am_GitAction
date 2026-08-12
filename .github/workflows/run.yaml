@@ -58,7 +58,7 @@ jobs:
         env:
           REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          python train_model.py
+          python iris_train_model.py
 
           echo "RF and LR Model Score" > report.md
           cat scores.txt >> report.md
